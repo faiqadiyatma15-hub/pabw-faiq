@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jurnal Liburan Saya</title>
+
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+  <link rel="stylesheet" href="responsif.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header>
+
+      <label class="tombol-tema">
+        <input type="checkbox" id="tema" class="pengalih-tema">
+        🌙 Switch Tema
+      </label>
+
+      <div class="header-baris">
+        <h1>Jurnal Liburan Saya</h1>
+
+        <nav class="navbar" aria-label="Navigasi utama">
+          <ul>
+            <li>
+              <a href="#katalog">Destinasi Liburan</a>
+            </li>
+            <li>
+              <a href="#riwayat">Foto Kenangan</a>
+            </li>
+            <li>
+              <a href="#tambah">Tambah Pengalaman</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <div class="isi">
+
+      <aside class="sisi">
+
+        <h2>Menu</h2>
+
+        <nav aria-label="Menu samping">
+          <ul class="menu-samping">
+            <li>
+              <a href="#katalog">Destinasi Favorit</a>
+            </li>
+            <li>
+              <a href="#riwayat">Riwayat Liburan</a>
+            </li>
+            <li>
+              <a href="#tambah">Tambah Pengalaman</a>
+            </li>
+          </ul>
+        </nav>
+
+      </aside>
+
+      <main class="utama">
+
+        <section id="katalog" class="sorotan">
+
+          <h2>Destinasi Favorit</h2>
+
+          <p>
+            Berikut adalah beberapa tempat liburan favorit yang pernah saya kunjungi.
+          </p>
+
+          <div class="galeri">
+
+            <article class="kartu">
+
+              <div class="kartu__isi">
+
+                <img src="liburan.jpg" alt="Pantai Kuta Bali">
+
+                <h3 class="kartu__judul">
+                  Pantai Kuta, Bali
+                </h3>
+
+                <p>
+                  Melihat pemandangan matahari terbenam yang indah dan menikmati suasana pantai.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="kartu">
+
+              <div class="kartu__isi">
+
+                <img src="borobudur.webp" alt="Candi Borobudur">
+
+                <h3 class="kartu__judul">
+                  Candi Borobudur, Magelang
+                </h3>
+
+                <p>
+                  Eksplorasi warisan sejarah dengan arsitektur yang megah di pagi hari.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="kartu">
+
+              <div class="kartu__isi">
+
+                <img src="bromo.webp" alt="Gunung Bromo">
+
+                <h3 class="kartu__judul">
+                  Gunung Bromo, Jawa Timur
+                </h3>
+
+                <p>
+                  Petualangan melihat lautan pasir dan keindahan
+                  <em>sunrise</em> dari puncak.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+        </section>
+
+        <section id="riwayat">
+
+          <h2>Riwayat Liburan</h2>
+
+          <div class="table-wrap">
+
+            <table>
+
+              <thead>
+                <tr>
+                  <th>Destinasi</th>
+                  <th>Tahun</th>
+                  <th>Lama Liburan</th>
+                  <th>Kesan Utama</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td>Bali</td>
+                  <td>2023</td>
+                  <td>4 Hari</td>
+                  <td>Sangat berkesan dan santai</td>
+                </tr>
+
+                <tr>
+                  <td>Yogyakarta</td>
+                  <td>2024</td>
+                  <td>3 Hari</td>
+                  <td>Kuliner lezat dan kaya budaya</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </section>
+
+        <section id="tambah">
+
+          <h2>Tambah Pengalaman Baru</h2>
+
+          <form action="#" method="post">
+
+            <div class="form-kolom">
+
+              <label for="tempat">
+                Nama Tempat / Destinasi
+              </label>
+
+              <input
+                type="text"
+                id="tempat"
+                name="tempat"
+                required
+                placeholder="Contoh: Labuan Bajo"
+              >
+
+              <span class="pesan-galat">
+                Nama tempat wajib diisi.
+              </span>
+
+            </div>
+
+            <div class="form-kolom">
+
+              <label for="tanggal">
+                Tanggal Kunjungan
+              </label>
+
+              <input
+                type="date"
+                id="tanggal"
+                name="tanggal"
+                required
+              >
+
+              <span class="pesan-galat">
+                Tanggal kunjungan wajib dipilih.
+              </span>
+
+            </div>
+
+            <div class="form-kolom">
+
+              <label for="rating">
+                Rating Pengalaman (1-5)
+              </label>
+
+              <select
+                id="rating"
+                name="rating"
+                required
+              >
+                <option value="">
+                  -- Pilih Rating --
+                </option>
+
+                <option value="5">
+                  ⭐⭐⭐⭐⭐ (Sangat Bagus)
+                </option>
+
+                <option value="4">
+                  ⭐⭐⭐⭐ (Bagus)
+                </option>
+
+                <option value="3">
+                  ⭐⭐⭐ (Cukup)
+                </option>
+
+              </select>
+
+            </div>
+
+            <div class="form-kolom">
+
+              <label for="kesan">
+                Kesan &amp; Pesan
+              </label>
+
+              <textarea
+                id="kesan"
+                name="kesan"
+                rows="4"
+                required
+                placeholder="Tuliskan cerita singkat..."
+              ></textarea>
+
+              <span class="pesan-galat">
+                Kesan dan pesan tidak boleh kosong.
+              </span>
+
+            </div>
+
+            <div class="kartu__kaki">
+
+              <button type="submit">
+                Simpan Pengalaman
+              </button>
+
+            </div>
+
+          </form>
+
+        </section>
+
+      </main>
+
+    </div>
+
+    <footer>
+
+      <p>
+        2026 Faiq Adiyatma Prakosa (25523088) — Jurnal Liburan Saya.
+      </p>
+
+    </footer>
+
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+
+</body>
+</html>

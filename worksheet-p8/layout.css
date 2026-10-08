@@ -1,0 +1,137 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+header {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  min-width: 0;
+}
+
+.header-baris {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.header-baris h1 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.navbar {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  min-width: 0;
+}
+
+.navbar ul {
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+  padding: 0;
+  min-width: 0;
+}
+
+nav a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.isi {
+  display: grid;
+  grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  grid-template-areas:
+    "sisi utama";
+  gap: var(--space-6);
+  padding-block: var(--space-6);
+  min-width: 0;
+}
+
+.sisi {
+  grid-area: sisi;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.menu-samping {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.utama {
+  grid-area: utama;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--section-gap);
+  min-width: 0;
+  align-content: start;
+}
+
+.utama > section {
+  min-width: 0;
+}
+
+.sorotan {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.kartu {
+  min-width: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
+}
+
+.kartu__isi {
+  min-width: 0;
+}
+
+.kartu__judul {
+  overflow-wrap: anywhere;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+th {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
+
+footer {
+  padding-block: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-fg);
+  font-size: var(--text-sm);
+}
