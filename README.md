@@ -1,7 +1,6 @@
 # PABW — Faiq Adiyatma Prakosa — 25523088
 
-Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi
-Berbasis Web, satu folder untuk setiap pertemuan.
+Repo ini memuat pekerjaan mata kuliah Pengembangan Aplikasi Berbasis Web, satu folder untuk setiap pertemuan.
 
 ## Pertemuan 3 — Halaman profil saya
 
@@ -32,3 +31,36 @@ Topik halaman saya: catatan jurnal liburan saya.
 
 Kriteria selesai: mengubah `--color-primary` di satu baris `tokens.css` harus mengubah warna tombol, tautan, judul, dan garis fokus di seluruh halaman.
 
+## Pertemuan 5 — Layout Modern: Flexbox dan Grid
+
+- Struktur halaman menggunakan CSS Grid untuk kerangka utama.
+- Komponen dan navigasi menggunakan Flexbox.
+- Jarak antar elemen menggunakan `gap`.
+- Galeri menggunakan Grid agar jumlah kolom dapat menyesuaikan lebar layar.
+- Layout diperiksa pada lebar 360 px dan 1280 px agar tidak meluber.
+
+## Pertemuan 6 — Responsif dan Penyempurnaan Halaman
+
+- Halaman menggunakan layout responsif untuk beberapa ukuran layar.
+- Tampilan diperiksa pada ukuran 360 px, 768 px, dan 1280 px.
+- Elemen halaman disesuaikan agar tetap terbaca dan tidak keluar dari area layar.
+- Halaman tetap menggunakan tema dan komponen dari pertemuan sebelumnya.
+
+## Pertemuan 8 — JavaScript Modern ES6+
+
+- Menambahkan folder `js/` dan berkas `app.js`.
+- Data profil dipindahkan ke JavaScript menggunakan `const`.
+- Menggunakan template literal, `??`, dan optional chaining `?.`.
+- Membuat fungsi untuk perkenalan dan pemformatan keahlian.
+- Menggunakan array of object untuk data destinasi.
+- Menggunakan `map`, `filter`, dan `find`.
+- Menggunakan `console.table()` untuk melihat data.
+- Menggunakan spread syntax untuk menyalin object dan array sebelum perubahan.
+- Melakukan pengecekan `undefined`, `null`, dan tipe data nilai input.
+- Halaman dijalankan melalui server lokal menggunakan Live Server.
+
+### Pengungkapan Penggunaan AI
+
+Pada Pertemuan 8, saya menggunakan AI sebagai alat bantu untuk memahami materi JavaScript Modern ES6+, memeriksa struktur kode, dan membantu menemukan kesalahan saat pengerjaan.
+
+Kode yang digunakan tetap saya sesuaikan dengan hasil pekerjaan dan struktur halaman yang saya buat sendiri.
