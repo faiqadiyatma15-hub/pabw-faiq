@@ -64,3 +64,22 @@ Kriteria selesai: mengubah `--color-primary` di satu baris `tokens.css` harus me
 Pada Pertemuan 8, saya menggunakan AI sebagai alat bantu untuk memahami materi JavaScript Modern ES6+, memeriksa struktur kode, dan membantu menemukan kesalahan saat pengerjaan.
 
 Kode yang digunakan tetap saya sesuaikan dengan hasil pekerjaan dan struktur halaman yang saya buat sendiri.
+
+## Pertemuan 9 — DOM, Event, dan Interaktivitas
+
+- Menambahkan berkas `js/dom.js` untuk menghubungkan JavaScript dengan elemen halaman.
+- Menggunakan `querySelector` dan `querySelectorAll` untuk memilih elemen DOM.
+- Menggunakan `createElement`, `textContent`, dan `append` untuk membuat daftar dari data JavaScript.
+- Membuat fungsi `render()` untuk menampilkan data ke halaman.
+- Mengosongkan wadah sebelum melakukan render ulang agar data tidak berlipat.
+- Membuat tombol filter dengan kategori `semua`, `web`, dan `data`.
+- Menggunakan `dataset` untuk membaca kategori dari tombol filter.
+- Menggunakan event delegation dengan satu `addEventListener` pada elemen `#filter`.
+- Menggunakan `event.target.closest("button")` untuk mengetahui tombol yang dipilih.
+- Menggunakan class `aktif` untuk menandai tombol filter yang sedang dipilih.
+- Menampilkan pesan ketika hasil filter tidak memiliki data.
+- Menambahkan validasi form menggunakan `preventDefault()` dan `trim()`.
+- Menggunakan `aria-invalid` untuk menandai input yang belum valid.
+- Tombol Simpan dinonaktifkan sampai seluruh kolom form valid.
+- Melakukan pengujian filter dan validasi form melalui browser dan Console.
+
